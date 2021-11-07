@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+*{
+    font-family: 'Poppins';
+}
+
+#footerprincipal{
+    margin-top: 1430px;
+}
+
+/* Estilização do body */
+body{ 
+    width: 100%;
+    height: 150vh;
+    background-color: #f0f1f1; 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* Estilizando o h1 */
+h1{
+    color: white;
+    text-align: center;
+} 
+/*Estilizando a div principal do form*/
+.caixa{
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 50%; /*posicionando a div no centro*/
+    left: 50%; /*posicionando a div no centro*/
+    transform: translate(-50%,-50%);/*posicionando a div no centro*/
+    background-color: #ebb55f;
+    padding: 15px;
+    border-radius: 15px;
+    width: 600px;
+    margin-top: 464px;
+    box-shadow: 2px 2px 8px 3px rgb(46, 46, 46);
+}
+/* Estilização do fieldset */
+fieldset{
+    border: 3px solid #fb9c01;
+} 
+/* Estilização do input data de Nascimento */
+#data{
+    width: 150px;
+    height: 30px;
+    border: white;
+    border-radius: 5px; 
+    outline: none;
+}
+.label-float input{
+    width: 97%;
+    height: 30px;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0; /*Definindo borda 0*/
+    border-radius: 5px;
+    min-width: 180px;
+    font-size: 20px;
+    margin-top: 15px;
+} 
+/* Estilização dos parágrafos que contém label e input */
+.label-float{
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 17.3px;
+}
+/* Estilização dos labels */
+.label-float label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: -4;
+    transition: all .3s ease-out;
+    font-weight: bold;
+}
+/* Animação utilizando Css */
+.label-float input:focus + label{
+    font-size: 13px;
+    margin-top: 0;
+    color: #834b00;
+}
+/* Estilizando as labels dos inputs radio */
+#radio{
+    font-size: 20px;
+}
+/* Estilizando os botões */
+#botao{
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    margin: 20px;
+    background-image: linear-gradient(to left,#fd692f, #fb9c01);
+    color: white;
+}
+#botao:hover{
+    box-shadow: 5px 5px 10px 2px #33333380;
+}
+/* Estilização data de nascimento */
+#nascimento{
+    width: 200px;
+    border: none;
+    height: 50px;
+    border-radius: 7px;
+    text-align: center ;
+
+}
+/* Estilizando a cor de todos os labels */
+label{
+    font-family: 'Poppins';
+    color: black;
+}
+.genero{
+    font-weight: bold;
+}
+/* ----------------------------RESPONSIVIDADE--------------------------*/
+/* Responsividade Tablet */
+@media (max-width: 768px) {
+    body{
+        height: 180vh;
+    }
+    #form1 p{
+        font-size: 20px;
+    }
+    #form1 {
+        width: 90%;
+        margin-left:25px ;
+        margin-top: 10px;
+    }
+    .caixa{
+        margin-top: 600px;
+        padding: 10px;
+        width: 70%;
+    }
+}
+/* Dispostivo mobile Médio */
+@media screen and (max-width: 480px) {
+    body{
+        height: 190vh;
+    }
+    #form1  {
+        width: 280px;
+        margin-left:10px ;
+        margin-top: 40px;
+    }
+    .caixa{
+        width: 300px;
+        height: 197vh;
+        padding: 5px;
+        margin-top: 700px;
+    }
+}
+@media screen and (max-width: 420px){
+    .caixa{
+        display: flex;
+        justify-content: center;
+        height:190vh;
+    }
+}
+@media screen and (max-width: 380px){
+    .caixa{
+        height: 200vh;
+    }
+}
+@media screen and (max-width: 360px){
+    .caixa{
+        margin-top: 600px;
+        height: 220vh;
+    }
+}
+/* Dispositivo mobile S */
+@media (max-width: 320px){
+    #form1{
+        width: 250px;
+        margin-left: 4.3px;
+    }
+    #botao{
+        width: 150px;
+        margin-left: 30px;
+       
+    } 
+    #form1 p{
+        font-size: 20px;
+    }
+    .caixa{
+        width:260px;
+        height: 198vh;
+        
+    }
+}
+@media screen and (max-width: 281px){
+    .caixa{
+        height: 210vh;
+    }
+}

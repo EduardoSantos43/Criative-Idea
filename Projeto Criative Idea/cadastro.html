@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="js/script.js" defer></script>
+        <script src="js/cadastro.js" defer></script>
+        <link rel="stylesheet" href="css/style.css" defer>
+        <link rel="stylesheet" href="css/style-cadastro.css">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <title>Criative Idea</title>
+    </head>
+</head>
+
+<body>
+
+    <!-- div class contendo informações do menu slide-->
+    <div class="desaparecer-aside"></div>
+
+    <div class="container-aside">
+        <div class="items-aside">
+            <div class="aumentar3">
+                <img id="aumentar3" src="img/aumentar.png" />
+                <img id="diminuir3" src="img/diminuir.png" />
+            </div>
+            <!-- informações do menu animado -->
+            <label id="ferramenta-aside" for=""><span>Ferramentas</span><img id="seta" src="img/seta.png"
+                    alt="" /></label>
+            <div class="ferramentas-links">
+                <a href="calculadora.html" class="aparecer">Calculadora</a>
+                <a href="Formulário.html" class="aparecer" for="">Formulário</a>
+                <a href="cadastro.html" class="aparecer" for="">Cadastro</a>
+            </div>
+        </div>
+    </div>
+    <!-- nav container agrupando imagens para ícones do menu -->
+    <nav class="container-nav">
+        <div class="menu-aside">
+            <img id="menu-aside" src="img/menu.png" alt="" />
+            <img id="menu-aside2" src="img/menu2.png" alt="" />
+        </div>
+
+        <!-- Div contendo logo da empresa Criative Idea -->
+        <div>
+            <a class="container-logo" href="index.html">
+                <img src="img/logolaranja.png" alt="" />
+            </a>
+        </div>
+        <!-- Div container agrupando links internos para páginas adjacentes de calculadora, formulário e cadastro, respectivamente -->
+        <div class="container-navegation">
+            <a class="nav-a" id="calculadora" href="calculadora.html">CALCULADORA</a>
+            <a class="nav-a" id="formulario" href="Formulário.html">FORMULÁRIO</a>
+            <a class="nav-a" id="cadastro" href="cadastro.html">CADASTRO</a>
+        </div>
+        <!-- div contendo imagem para botões de acessibilidade para pessoas com baixa visão -->
+        <div class="aumentar">
+            <img id="aumentar" src="img/aumentar.png" />
+            <img id="diminuir" src="img/diminuir.png" />
+        </div>
+        <!-- div contendo imagem para botão de acessibilidade Dark Mode, voltado às pessoas que possuem sensibilidade à luz -->
+        <div class="noite">
+            <img id="noite" src="img/lua-preenchido-preto.png" alt="" />
+        </div>
+        <!-- div contendo imagem para botão de acessibilidade Dark Mode, voltado às pessoas que possuem sensibilidade à luz -->
+        <div class="dia">
+            <img id="dia" src="img/lua-preenchido-branco.png" alt="" />
+        </div>
+        <!-- div contendo imagem para botão de acessibilidade, para mudança de idioma para Poturguês brasileiro.-->
+        <div class="brasil">
+            <img id="brasil" src="img/brasil.png" alt="" />
+        </div>
+        <!-- div contendo imagem para botão de acessibilidade, para mudança de idioma para Inglês.-->
+        <div class="estadosunidos">
+            <img id="estadosunidos" src="img/estados-unidos.png" alt="" />
+        </div>
+        <!-- div contendo imagem para botão de acessibilidade, para mudança de idioma para Espanhol.-->
+        <div class="espanha">
+            <img id="espanha" src="img/espanha.png" alt="" />
+        </div>
+        <!-- div contendo imagem para botão de acessibilidade, para mudança de idioma para Francês.-->
+        <div class="franca">
+            <img id="franca" src="img/franca.png" alt="" />
+        </div>
+        <!-- div contendo imagens e ids para botões de acessibilidade para usuários internacionais.-->
+        <div class="containerlingua">
+            <img id="brasil2" src="img/brasil.png" alt="" />
+            <img id="estadosunidos2" src="img/estados-unidos.png" alt="" />
+            <img id="espanha2" src="img/espanha.png" alt="" />
+            <img id="franca2" src="img/franca.png" alt="" />
+        </div>
+    </nav>
+
+    <!--h1 com nome da  loja-->
+    <header>
+        <div class="container-nome">
+            <h1 id="loja">Minha Loja</h1>
+        </div>
+    </header>
+
+    <!--Main com conteúdo principal-->
+    <main>
+        <!--Título do cadastro-->
+        <section class="container-cadastro">
+            <h3 id="titulo">CADASTRO</h3>
+            <div class="input-cadastro">
+                <label id="label">Produto:</label>
+                <input type="text" id="nomeProduto" placeholder="Nome do produto"></input>
+            </div>
+            <div class="input-cadastro">
+                <label id="label2">Preço:</label>
+                <input type="text" id="precoProduto" placeholder="Preço do produto"></input>
+            </div>
+            <div class="input-cadastro">
+                <label id="label3">Fornecedor:</label>
+                <input type="text" id="fornecedor" placeholder="Fornecedor do produto"></input>
+            </div>
+            <div class="input-cadastro">
+                <label id="label4">Quantidade:</label>
+                <input type="text" id="quantidade" placeholder="Fornecedor do produto"></input>
+            </div>
+            <div class="btn">
+                <button id="btn2" onclick="produto.cancelar()">Cancelar</button>
+                <button id="btn1" onclick="produto.salvar()">Salvar</button>
+            </div>
+        </section>
+        <section class="conteudo">
+            <table>
+                <thead>
+                    <th class="center" id="th1">ID</th>
+                    <th class="center" id="th2">Produto</th>
+                    <th class="center" id="th3">Preço</th>
+                    <th class="center" id="th4">Fornecedor</th>
+                    <th id="qtd" class="center" id="th5">Quantidade</th>
+                    <th class="center" id="th6">Ações</th>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <!--Chamando api  vlibras-->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+
+    <!--Footer com informações de contato da Central de atendimento, utilizando imagens de ícones de telefone, whatsapp e email com alt, utilizado 2 NAVs e display flex-->
+    <footer id="footerprincipal">
+        <div class="classfooter c">
+            <ul id="ulfooter">
+                <h3 id="ferramentas">Ferramentas</h3>
+                <li class="ferramentas">
+                    <a id="calculadora-footer" href="calculadora.html">Calculadora</a><br>
+                </li>
+                <li class="ferramentas"><a id="formulario-footer" href="Formulário.html">Formulario</a>
+                </li>
+                <li class="ferramentas"><a id="cadastro-footer" href="cadastro.html">Cadastro</a>
+
+            </ul>
+        </div>
+        <div class="classfooter">
+            <ul id="ulfooter">
+                <h3 id="central-de-atendimento">Central de atendimento</h3>
+                <li><img class="iconefooter" src="img/telefone.png" alt="ícone de telefone"> (71)3333-3333</li>
+                <li><img class="iconefooter" src="img/whatsapp.png" alt="ícone do whatsapp">(71)99999-9999</li>
+                <li><img class="iconefooter" src="img/email.png" alt="ícone de email">contato@criativeidea.com.br</li>
+            </ul>
+        </div>
+    </footer>
+    <!--copyrigth com nome da agencia desenvolvedora-->
+    <section id="copyright">
+        <p id="copy">&copy;Agência Criative Idea</p>
+    </section>
+
+    <script src='js/cadastro.js'></script>
+</body>
+
+</html>

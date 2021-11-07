@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+:root {
+    --cinza-escuro: rgb(0, 0, 0, 70%);
+    --cinza: #E0DEDE;
+    --laranja-claro: #fb9c01;
+    --laranja-escuro: #fd692f;
+    --cinza-claro: cornsilk;
+}
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body, button, input, select, textarea {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #fffdfd;
+}
+
+header {
+    background-image: linear-gradient(to right, var(--laranja-escuro) , var(--laranja-claro)); 
+    text-align: center;
+    color: white;
+}
+
+main {
+    padding: 30px 50px;
+}
+
+.container-cadastro {
+    width: 70%;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 2px 3px 10px #bcbcbc;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.nome-cadastro {
+    text-align: center;
+    font-weight: bold;
+}
+
+.input-cadastro {
+    display: grid;
+    margin-bottom: 10px;
+}
+
+.container-cadastro h3{
+    text-align: center;
+    color: var(--cinza-escuro);
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: 0;
+    /* para tirar a bordar quando recebe o focus*/
+}
+
+label {
+    color: var(--cinza-escuro);
+}
+.btn{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+}
+button {
+    width: 85px;
+    border: 0;
+    padding: 10px;
+    outline: 0;
+    background-image: linear-gradient(to right, var(--laranja-escuro) , var(--laranja-claro)); 
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all ease 0.5s;
+    margin-right: 15px;
+}
+
+button:hover {
+    background-color: var(--laranja-escuro);
+}
+
+
+table {
+    border-collapse: collapse;
+    border: 1px solid var(--cinza);
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    color: var(--cinza-escuro);
+}
+
+table th {
+    background-color: rgb(214, 214, 214);
+}
+
+table th, td {
+    padding: 1px 5px;
+    text-align: left;
+}
+
+table td img {
+    width: 22px;
+    cursor: pointer;
+}
+
+tr{
+    border-top: 1px solid #E0DEDE;
+}
+
+td{
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+#footerprincipal{
+    margin-top: 150px;
+}
+
+@media screen and (max-width: 725px){
+    table{
+        width: 87%;
+        font-size: 12px;
+        margin-left: auto;
+    }
+
+    main{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .container-cadastro{
+        width: 87%;
+    } 
+
+    tr{
+        border-bottom: 1px solid #dad4d4;
+    }
+}
+
+@media screen and (width: 541px){
+    table{
+        font-size: 20px;
+        
+    }
+
+    main{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .container-cadastro{
+        width: 87%;
+    }
+   
+}
+
+@media screen and (max-width: 415px){
+    table{
+        font-size: 10px;
+        
+    }
+
+    main{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .container-cadastro{
+        width: 87%;
+    }
+    
+}
+
+@media screen and (max-width: 376px){
+    table{
+        font-size: 12px;
+        
+    }
+
+    main{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .container-cadastro{
+        width: 87%;
+    }
+
+}
+
+@media screen and (width: 360px){
+    table{
+        font-size: 12px;
+        
+    }
+
+    main{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .container-cadastro{
+        width: 87%;
+    }
+}
+
+@media screen and (max-width: 325px){
+    table{
+        font-size: 10px;
+    }
+
+    main{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .container-cadastro{
+        width: 87%;
+    }
+}
+
+@media screen and (max-width: 321px){
+    table{
+        font-size: 10px;
+        
+    }
+
+    main{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .container-cadastro{
+        width: 87%;
+    }
+}
+
+@media screen and (width: 280px){
+    table{
+        font-size: 9px;
+        
+    }
+
+    main{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .container-cadastro{
+        width: 87%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
